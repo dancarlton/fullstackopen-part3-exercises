@@ -20,3 +20,9 @@
       "number": "39-23-6423122"
     }
 ]
+
+// configure the url PORT
+const PORT = 3001
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`)
+})
