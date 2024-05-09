@@ -1,3 +1,10 @@
+const express = require('express')
+const app = express()
+
+app.use(express.json())
+
+
+
 [
     {
       "id": 1,
@@ -20,6 +27,15 @@
       "number": "39-23-6423122"
     }
 ]
+
+app.get('/', (request, response) => {
+  response.send('<h1>Its going to be ok, just keep grinding!</h1>')
+})
+
+app.get('/api/persons', (request, response) => {
+  const body = request.body
+})
+
 
 // configure the url PORT
 const PORT = 3001
